@@ -1,0 +1,287 @@
+#genres {
+  display: grid;
+  grid-template-areas:
+    "div-Genres-Title div-Genres-Title"
+    "div-Sidbar div-Filter"
+    "div-Sidbar div-Genres";
+  font-family: "Inter";
+}
+.div-Genres {
+  grid-area: div-Genres;
+  margin-top: 3rem;
+}
+.div-Genres > .div-Container-genres {
+  gap: 1.5rem;
+}
+/* cart */
+.genres-cart {
+  width: 100%;
+  height: max-content;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 19px;
+  background-color: var(--A3A3A30D-color);
+  transition: transform 0.2s;
+}
+.genres-cart:hover {
+  transform: scale(1.03);
+}
+.genres-cart > .div-Genres-Left {
+  max-width: 126px;
+}
+.genres-cart > .div-Genres-Left > img {
+  width: 100%;
+  height: 196px;
+  border-radius: 5px;
+  opacity: 1;
+}
+.genres-cart > .div-Genres-Right {
+  width: 100%;
+}
+.genres-cart > .div-Genres-Right > .div-Name-Star > .div-Star {
+  gap: 7px;
+}
+.genres-cart > .div-Genres-Right > .div-Name-Star > h5 {
+  color: var(--C3C3C3-color);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.genres-cart > .div-Genres-Right > .div-Name-Star > .div-Star > i {
+  width: 24;
+  height: 24;
+  color: var(--F5C518-color);
+}
+.genres-cart > .div-Genres-Right > .div-Name-Star > .div-Star > span {
+  color: var(--C3C3C3-color);
+  font-weight: 400;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.genres-cart > .div-Genres-Right > .div-Name-Star > .div-Star > p {
+  color: var(--797979-color);
+  font-weight: 400;
+  font-family: "Inter";
+
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.genres-cart > .div-Genres-Right > span {
+  color: var(--797979-color);
+  font-weight: 400;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0%;
+}
+.genres-cart > .div-Genres-Right > ul {
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0%;
+  color: var(--C3C3C3-color);
+  gap: 10px;
+}
+.genres-cart > .div-Genres-Right > ul > li {
+  font-weight: 400;
+  font-family: "Inter";
+
+  border-radius: 45px;
+  gap: 10px;
+  padding: 8px 18px;
+  background-color: var(--A3A3A326-color);
+}
+.genres-cart > .div-Genres-Right > p {
+  font-weight: 400;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0%;
+
+  color: var(--C3C3C3-color);
+}
+.genres-cart > .div-Genres-Right > .div-style {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0%;
+  color: var(--C3C3C3-color);
+}
+.genres-cart > .div-Genres-Right > h5,
+.genres-cart > .div-Genres-Right > span,
+.genres-cart > .div-Genres-Right > p {
+  word-wrap: break-word;
+}
+
+.genres-cart > .div-Genres-Right > .div-style > span {
+  font-family: "Inter";
+  font-weight: 600;
+}
+.genres-cart > .div-Genres-Right > .div-style > ul {
+  font-family: "Inter";
+  font-weight: 600;
+}
+/* oder */
+.div-Genres-Title {
+  grid-area: div-Genres-Title;
+  margin: 2rem 0;
+}
+.div-Genres-Title > div > h5 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--C3C3C3-color);
+  gap: 0.5rem;
+}
+.div-Genres-Title > div > h5 > i {
+  font-size: 0.5rem;
+  color: var(--F5C518-color);
+}
+.div-Filter {
+  grid-area: div-Filter;
+}
+.div-Filter > .div-Container-Filter {
+  flex-direction: row;
+  gap: 1rem;
+  padding-bottom: 4rem;
+  border-bottom: 2px solid var(--A3A3A326-color);
+}
+.div-Filter > .div-Container-Filter > button {
+  width: fit-content;
+  height: 42px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0%;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 8px 18px;
+  color: var(--797979-color);
+  background-color: var(--A3A3A30D-color);
+  border: none;
+  font-family: "Inter";
+}
+.div-Filter > .div-Container-Filter > button > span {
+  color: var(--C3C3C3-color);
+}
+.div-Filter > .div-Container-Filter > button > div > i {
+  font-size: 1rem;
+  color: var(--C3C3C3-color);
+}
+.div-Filter > .div-Container-Filter > div {
+  width: fit-content;
+  padding: 8px 18px;
+  background-color: var(--A3A3A30D-color);
+  border-radius: 10px;
+}
+.div-Filter > .div-Container-Filter > div > ul {
+  flex-direction: row;
+  gap: 1.5rem;
+}
+/* div-Sidbar */
+.div-Sidbar {
+  width: 272px;
+  grid-area: div-Sidbar;
+  margin-right: 40px;
+}
+.div-Sidbar > .scroll-wrapper {
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+  height: 460px !important;
+}
+.div-Sidbar > .scroll-wrapper {
+  width: 100%;
+}
+.div-Sidbar > .scroll-wrapper > .scroll-content {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0%;
+  color: var(--C3C3C3-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.active-genre {
+  color: var(--F5C518-color);
+  font-weight: bold;
+}
+.genres-cart > .div-Genres-Left > img {
+  object-fit: cover;
+}
+.div-Flex-Filter {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+}
+
+.div-Flex-Filter-show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 730px) {
+  .genres-cart > .div-Genres-Right {
+    gap: 8px;
+  }
+  #genres {
+    grid-template-areas:
+      "div-Genres-Title"
+      "div-Filter"
+      "div-Genres";
+    grid-template-columns: 100%;
+  }
+  .div-Sidbar {
+    display: none;
+  }
+  .genres-cart {
+    flex-direction: column !important;
+    width: 100%;
+    padding: 15px;
+  }
+  .genres-cart > .div-Genres-Left {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 270px;
+  }
+
+  .genres-cart > .div-Genres-Left > img {
+    height: 404px;
+    width: 100%;
+  }
+
+  .genres-cart > .div-Genres-Right > h5,
+  .genres-cart > .div-Genres-Right > p,
+  .genres-cart > .div-Genres-Right > span {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .div-Filter > .div-Container-Filter {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1185px) {
+  .div-Sidbar > .scroll-wrapper {
+    width: fit-content;
+  }
+  .div-Sidbar {
+    width: fit-content;
+  }
+}
+@media (max-width: 1000px) {
+  .div-Sidbar {
+    display: none;
+  }
+}

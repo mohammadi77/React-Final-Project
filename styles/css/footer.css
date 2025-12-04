@@ -1,0 +1,13 @@
+:root {
+  --BCBCBC-color: rgba(188, 188, 188, 1);
+}
+footer > p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0%;
+  color: var(--);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}

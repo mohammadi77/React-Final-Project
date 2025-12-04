@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  gap: 8px;
+  user-select: none;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+.btn-Arrow {
+  border: none;
+  cursor: pointer;
+  width: 41px;
+  height: 41px;
+  background-color: var(--282828-color);
+  color: var(--A3A3A326-color);
+  border-radius: 50%;
+}
+
+.btn-Number {
+  font-family: "Inter";
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+.btn-Number-disabled {
+  background-color: transparent;
+  color: var(--BCBCBC-color);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.btn-Number-active {
+  background-color: var(--F5C518-color);
+  color: var(--000000-color);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}

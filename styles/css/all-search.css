@@ -1,0 +1,31 @@
+.div-Title > .div-Results {
+  font-size: 28px;
+  gap: 5px;
+  color: var(--C3C3C3-color);
+  font-family: "Inter";
+}
+.div-Title > .div-Results > p {
+  font-weight: 400;
+
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.div-Title > .div-Results > h3 {
+  font-weight: 600;
+}
+.div-Title > .div-Item {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0;
+  color: var(--797979-color);
+  gap: 5px;
+}
+.section-All_Search {
+  margin-top: 3rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}

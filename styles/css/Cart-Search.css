@@ -1,0 +1,106 @@
+header {
+  position: relative;
+  z-index: 22;
+}
+
+.main-Details {
+  top: 85px;
+  position: relative;
+}
+.scroll-wrapper-Search {
+  /* height: 681px; */
+  height: 500px;
+  top: 75px;
+  padding: 8px 16px;
+  background-color: var(--181818-color);
+  border-radius: 10px;
+}
+.scroll-wrapper-Search > .scroll-Content-Search {
+  height: 100%;
+  overflow-y: scroll;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  -ms-overflow-style: none;
+}
+.scroll-wrapper-Search > .scroll-Content-Search > .div-Cart-Search {
+  height: 117px;
+  margin: 8px 0;
+}
+.scroll-wrapper-Search > .scroll-Content-Search > .div-Cart-Search > img {
+  width: 80px;
+  height: 100%;
+  object-fit: fill;
+  margin-right: 10px;
+}
+.scroll-wrapper-Search > .scroll-Content-Search > .div-Cart-Search > div {
+  align-content: center;
+  justify-content: center;
+}
+.scroll-wrapper-Search > .scroll-Content-Search > .div-Cart-Search > div > h5 {
+  font-weight: 700;
+  font-family: Inter;
+
+  color: var(--FFFFFF-color);
+}
+.scroll-wrapper-Search > .scroll-Content-Search > .div-Cart-Search > div > ul {
+  font-weight: 500;
+  color: var(--BCBCBC-color);
+  list-style-type: none;
+}
+.scroll-wrapper-Search
+  > .scroll-Content-Search
+  > .div-Cart-Search
+  > div
+  > ul
+  > li {
+  font-weight: 500;
+  font-family: Inter;
+}
+.scroll-wrapper-Search > .scrollbar-Track-Search {
+  position: absolute;
+  top: 16px;
+  right: 8px;
+  bottom: 16px;
+  width: 2px;
+  border-radius: 3px;
+  background: var(--FFFFFF1A-color);
+  transition: opacity 0.2s ease;
+}
+.scroll-wrapper-Search > .scrollbar-Track-Search > .scrollbar-Thumb-Search {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background: var(--FFFFFF-color);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 117px;
+}
+.btn-more-search {
+  border-radius: 13%;
+  border: none;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  color: var(--000000-color);
+  background-color: var(--F5C518-color);
+}
+@media (max-width: 730px) {
+  .scroll-wrapper-Search {
+    transform: translateX(-56.7%) !important;
+    top: 130px !important;
+    -webkit-transform: translateX(-56.7%) !important;
+    -moz-transform: translateX(-56.7%) !important;
+    -ms-transform: translateX(-56.7%) !important;
+    -o-transform: translateX(-56.7%) !important;
+  }
+}
+@media (max-width: 900px) {
+  .scroll-wrapper-Search
+    > .scroll-Content-Search
+    > .div-Cart-Search
+    > div
+    > h5 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/css/header.css" />
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+    <link rel="stylesheet" href="styles/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/css/Cart-Search.css" />
+    <link rel="stylesheet" href="styles/css/details.css" />
+    <link rel="stylesheet" href="styles/css/loading.css" />
+    <link rel="stylesheet" href="styles/css/popup.css" />
+    <link rel="stylesheet" href="styles/css/important.css" />
+    <link rel="stylesheet" href="styles/css/footer.css" />
+
+    <title>IMDb</title>
+  </head>
+  <body>
+    <header>
+      <section
+        class="section-Container container-midd"
+        style="z-index: 1; width: 100%"
+      >
+        <div class="header d-grid align-items-center">
+          <a href="index.html">
+            <img src="icons/icon/logo.png" alt="icon" title="icon" id="icon" />
+          </a>
+          <div class="div-Search align-items-center justify-content-between">
+            <input
+              type="search"
+              class="bg-transparent font-size-14"
+              id="input-Search"
+              placeholder="Search IMDb"
+            />
+            <i class="fa fa-search i-Search" id=""></i>
+          </div>
+          <div id="i-720">
+            <i class="fa fa-search justify-content-end div-i"></i>
+          </div>
+          <div class="div-Genres d-flex align-items-center">
+            <span class="font-size-14">Genres</span>
+            <i class="fa fa-angle-down i-Genres"></i>
+          </div>
+        </div>
+
+        <div class="div-Modal-Root1"></div>
+      </section>
+    </header>
+    <main class="main-Details">
+      <section class="section-Container container-midd">
+        <div class="div-Details">
+          <div class="div-Details-Up d-flex flex-row justify-content-between">
+            <div
+              class="div-Details-Up-Left d-flex flex-column justify-content-between"
+            >
+              <h5>Dune: Part Two</h5>
+              <span> - . - . -</span>
+            </div>
+            <div class="div-Details-Up-Right d-flex">
+              <div
+                class="div-Details-Up-Right-Container d-flex flex-row align-self-end"
+              >
+                <div
+                  class="div-Details-Up-Star d-flex flex-row align-items-center"
+                >
+                  <i class="fa fa-star"></i>
+                  <p><span>-</span>/10</p>
+                </div>
+                <p class="p-Number">(<span>-</span>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="div-Details-Midd d-flex">
+            <div class="div-Details-Midd-Right-Up">
+              <table>
+                <tr>
+                  <td class="td-1">Genre</td>
+                  <td class="td-2">
+                    <ul id="div-Details-Ul-Gender" class="d-flex flex-wrap">
+                      <li>-</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-1">Plot</td>
+                  <td class="td-2">
+                    <p>-</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-1">Director</td>
+                  <td class="td-2">
+                    <p>-</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-1">Writers</td>
+                  <td class="td-2">
+                    <ul>
+                      <li>-</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-1">Stars</td>
+                  <td class="td-2">
+                    <ul>
+                      <li>-</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="div-Details-Img position-relative">
+            <img
+              src="images/gray.png"
+              alt=""
+              class="position-absolute"
+              onerror="images/No_Image_Available.jpg"
+            />
+            <div
+              class="div-Play position-absolute d-none justify-content-center align-items-center"
+            >
+              <i class="fa fa-play"></i>
+            </div>
+          </div>
+
+          <div class="div-Details-pic">
+            <img src="poster2.jpg" alt="" title="" />
+          </div>
+          <div class="div-Details-Down">
+            <div class="div-Details-Down-Up d-flex align-items-center">
+              <i class="fa fa-circle"> </i>
+              <p>Cast</p>
+            </div>
+            <div class="div-Details-Down-Down">
+              <div class="cast-slider-wrapper">
+                <button id="castLeftBtn">
+                  <i class="fa fa-arrow-alt-circle-left"></i>
+                </button>
+
+                <div class="div-Details-Down-Down" id="castSlider"></div>
+
+                <button id="castRightBtn">
+                  <i class="fa fa-arrow-alt-circle-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 by Karyar Studio</p>
+    </footer>
+    <script src="scripts/js/http.js"></script>
+    <script src="scripts/js/loading.js"></script>
+    <script src="scripts/js/popup.js"></script>
+    <script src="scripts/js/search.js"></script>
+    <script src="scripts/js/genres.js"></script>
+    <script src="scripts/js/header.js"></script>
+    <script src="scripts/js/details.js"></script>
+  </body>
+</html>

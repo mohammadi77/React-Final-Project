@@ -1,0 +1,109 @@
+#movies-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+.cart-index {
+  width: 100%;
+  max-width: 300px;
+  background: antiquewhite;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  transition: transform 0.2s;
+}
+.cart-index:hover {
+  transform: scale(1.03);
+}
+.cart-index > .div-Up {
+  position: relative;
+  background: aquamarine;
+  width: 100%;
+  min-height: 304px;
+}
+.cart-index > .div-Up > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cart-index > .div-Up > p {
+  font-family: "Inter";
+  color: var(--282828-color);
+  position: absolute;
+  width: fit-content;
+  background-color: var(--F5C518-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px 2px;
+}
+.cart-index > .div-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  justify-content: space-between;
+  height: 100%;
+  background-color: var(--1B1B1B-color);
+  gap: 1rem;
+}
+.cart-index > .div-details > .div-up > h6 {
+  color: var(--FFFFFF-color);
+  font-family: "Inter";
+  font-weight: 700;
+  letter-spacing: -1%;
+}
+.cart-index > .div-details > .div-up > ul {
+  color: var(--BCBCBC-color);
+  flex-wrap: wrap;
+  font-weight: 500;
+  letter-spacing: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  font-family: "Inter";
+}
+
+.cart-index > .div-details > .div-button {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.cart-index > .div-details > .div-button > .star {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+}
+.cart-index > .div-details > .div-button > .star > i {
+  color: var(--F5C518-color);
+  width: 15px;
+  height: 15px;
+}
+.cart-index > .div-details > .div-button > .star > span {
+  color: var(--BCBCBC-color);
+
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: "Inter";
+}
+.cart-index > .div-details > .div-button > button {
+  color: var(--1C97FF-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  background-color: var(--282828-color);
+  box-shadow: 0px 6px 15px -2px rgba(16, 24, 40, 0.16);
+  width: 95px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Inter";
+}
