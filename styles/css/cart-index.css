@@ -8,7 +8,7 @@
 .cart-index {
   width: 100%;
   max-width: 300px;
-  background: antiquewhite;
+  background: var(--BCBCBC-color);
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -21,7 +21,7 @@
 }
 .cart-index > .div-Up {
   position: relative;
-  background: aquamarine;
+  background: var(--BCBCBC-color);
   width: 100%;
   min-height: 304px;
 }
