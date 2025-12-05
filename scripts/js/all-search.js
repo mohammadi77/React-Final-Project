@@ -18,7 +18,7 @@ const query = params.get("q");
 function createMovieCard(item) {
   const poster = item.poster_path
     ? `${TMDB_IMG}${item.poster_path}`
-    : "../image/No_Image_Available.jpg";
+    : "image/No_Image_Available.jpg";
 
   const rating = item.vote_average ? item.vote_average.toFixed(1) : "-";
   const genresList =
@@ -31,7 +31,7 @@ function createMovieCard(item) {
   return `
     <div class="cart-index">
       <div class="div-Up">
-        <img src="${poster}" alt="${name}" title="${name}" onerror="this.src='../images/No_Image_Available.jpg'" />
+        <img src="${poster}" alt="${name}" title="${name}" onerror="this.src='images/No_Image_Available.jpg'" />
         <p>${type === "movie" ? "Movie" : "TV Series"}</p>
       </div> 
       <div class="div-details">
@@ -52,7 +52,7 @@ function createMovieCard(item) {
 }
 
 function goToMovie(id, type) {
-  window.location.href = `../pages/details.html?id=${id}&type=${type}`;
+  window.location.href = `details.html?id=${id}&type=${type}`;
 }
 
 let currentPage = 1;

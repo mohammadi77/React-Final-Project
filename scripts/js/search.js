@@ -105,7 +105,7 @@ function appendItem(item) {
   const content = document.querySelector(".scroll-Content-Search");
   const img = item.poster_path
     ? `https://image.tmdb.org/t/p/w200${item.poster_path}`
-    : "../images/No_Image_Available.jpg";
+    : "images/No_Image_Available.jpg";
   const title = item.title || item.name;
 
   const card = document.createElement("div");
@@ -119,7 +119,7 @@ function appendItem(item) {
   content.appendChild(card);
 
   card.onclick = () => {
-    window.location.href = `pages/details.html?id=${item.id}&type=${item.media_type}`;
+    window.location.href = `details.html?id=${item.id}&type=${item.media_type}`;
   };
 
   const ulSearch = card.querySelector(".ul-Search");
@@ -232,7 +232,7 @@ input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     const searchValue = input.value.trim();
     if (searchValue.length > 2) {
-      window.location.href = `pages/all-search.html?q=${encodeURIComponent(
+      window.location.href = `all-search.html?q=${encodeURIComponent(
         searchValue
       )}`;
     }

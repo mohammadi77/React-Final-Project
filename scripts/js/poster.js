@@ -121,14 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 ? `${TMDB_IMG_Original}${
                     item.backdrop_path || item.poster_path
                   }`
-                : "../images/no-image.png";
+                : "images/no-image.png";
 
             const img = document.createElement("img");
             img.src = poster;
             img.style.cursor = "pointer";
             img.addEventListener("click", () => {
               const type = item.title ? "movie" : "tv";
-              window.location.href = `../pages/details.html?id=${item.id}&type=${type}`;
+              window.location.href = `details.html?id=${item.id}&type=${type}`;
             });
 
             slide.appendChild(img);

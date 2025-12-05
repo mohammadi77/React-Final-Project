@@ -92,7 +92,7 @@ function fetchRuntime(item) {
 function createMovieCard(item) {
   const poster = item.poster_path
     ? TMDB_IMG + item.poster_path
-    : "../images/No_Image_Available.jpg";
+    : "images/No_Image_Available.jpg";
   const rating = item.vote_average || "-";
   const year =
     (item.release_date || item.first_air_date || "").slice(0, 4) || "-";
@@ -121,14 +121,14 @@ function createMovieCard(item) {
   const name = item.title || item.name || "Unknown";
   const genresHTML =
     item.genre_names?.map((g) => `<li>${g}</li>`).join("") || "<li>-</li>";
-  const detailLink = `../pages/details.html?id=${item.id}&type=${
+  const detailLink = `details.html?id=${item.id}&type=${
     isMovie ? "movie" : "tv"
   }`;
 
   return `
     <div class="genres-cart d-flex flex-row cursor-pointer" onclick="window.location.href='${detailLink}'">
       <div class="div-Genres-Left">
-        <img src="${poster}" alt="${name}" onerror="this.src='../images/No_Image_Available.jpg'" />
+        <img src="${poster}" alt="${name}" onerror="this.src='images/No_Image_Available.jpg'" />
       </div>
       <div class="div-Genres-Right d-flex flex-column">
         <div class="div-Name-Star d-flex flex-row justify-content-between">
@@ -188,7 +188,7 @@ async function loadGenresSide() {
       li.dataset.id = genre.id;
       if (genre.id == genreId) li.classList.add("active-genre");
       li.addEventListener("click", () => {
-        window.location.href = `../pages/genresList.html?genreId=${genre.id}`;
+        window.location.href = `genresList.html?genreId=${genre.id}`;
       });
       genreList.appendChild(li);
     }

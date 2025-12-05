@@ -67,7 +67,7 @@ function loadDetails() {
       const posterPath = data.poster_path || data.backdrop_path;
       document.querySelector(".div-Details-Img img").src = posterPath
         ? TMDB_IMG + posterPath
-        : "../images/No_Image_Available.jpg";
+        : "images/No_Image_Available.jpg";
 
       // دریافت credits (بازیگران و crew)
       return http(
@@ -155,10 +155,10 @@ function renderCastSlider() {
     let imgSrc = actor.profile_path
       ? TMDB_IMG + actor.profile_path
       : actor.gender === 1
-      ? "../images/female.jpg"
+      ? "images/female.jpg"
       : actor.gender === 2
-      ? "../images/male.png"
-      : "../images/default.jpg";
+      ? "images/male.png"
+      : "images/default.jpg";
 
     cont.innerHTML += `
       <div class="cart-Actor">

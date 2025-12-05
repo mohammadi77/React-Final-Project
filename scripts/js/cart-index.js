@@ -131,7 +131,7 @@ function createMovieCard(item) {
 }
 
 function goToMovie(id, type) {
-  window.location.href = `pages/details.html?id=${id}&type=${type}`;
+  window.location.href = `details.html?id=${id}&type=${type}`;
 }
 
 function renderPage(page = 1) {
