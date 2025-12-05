@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
           li.textContent = array_Genres[i].name;
           li.dataset.id = array_Genres[i].id;
           li.addEventListener("click", () => {
-            window.location.href = `../pages/genresList.html?genreId=${array_Genres[i].id}`;
+            window.location.href = `.pages/genresList.html?genreId=${array_Genres[i].id}`;
           });
           content.appendChild(li);
         }
