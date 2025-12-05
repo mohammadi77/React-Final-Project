@@ -12,84 +12,80 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/css/header.css" />
-    <link rel="stylesheet" href="../icons/css/all.min.css" />
-    <link rel="stylesheet" href="../styles/css/bootstrap.css" />
-    <link rel="stylesheet" href="../styles/css/poster.css" />
-    <link rel="stylesheet" href="../styles/css/pagination.css" />
-    <link rel="stylesheet" href="../styles/css/cart-index.css" />
-    <link rel="stylesheet" href="../styles/css/Cart-Search.css" />
-    <link rel="stylesheet" href="../styles/css/loading.css" />
-    <link rel="stylesheet" href="../styles/css/popup.css" />
-    <link rel="stylesheet" href="../styles/css/important.css" />
-    <link rel="stylesheet" href="../styles/css/footer.css" />
+    <link rel="stylesheet" href="REP/styles/css/header.css" />
+    <link rel="stylesheet" href="REP/icons/css/all.min.css" />
+    <link rel="stylesheet" href="REP/styles/css/bootstrap.css" />
+    <link rel="stylesheet" href="REP/styles/css/poster.css" />
+    <link rel="stylesheet" href="REP/styles/css/pagination.css" />
+    <link rel="stylesheet" href="REP/styles/css/cart-index.css" />
+    <link rel="stylesheet" href="REP/styles/css/Cart-Search.css" />
+    <link rel="stylesheet" href="REP/styles/css/loading.css" />
+    <link rel="stylesheet" href="REP/styles/css/popup.css" />
+    <link rel="stylesheet" href="REP/styles/css/important.css" />
+    <link rel="stylesheet" href="REP/styles/css/footer.css" />
 
     <title>IMDb</title>
   </head>
   <body>
-    <div id="root">
-      <div class="container-Popup d-none"></div>
-      <section class="container-midd">
-        <header class="position-relative">
-          <section
-            class="section-Container position-absolute"
-            style="z-index: 1; width: 100%"
-          >
-            <div class="header d-grid align-items-center">
-              <a href="index.html">
-                <img
-                  src="../icons/icon/logo.png"
-                  alt="icon"
-                  title="icon"
-                  id="icon"
-                />
-              </a>
-              <div
-                class="div-Search align-items-center justify-content-between"
-              >
-                <input
-                  type="search"
-                  class="bg-transparent font-size-14"
-                  id="input-Search"
-                  placeholder="Search IMDb"
-                />
-                <i class="fa fa-search i-Search" id=""></i>
-              </div>
-              <div id="i-720">
-                <i class="fa fa-search justify-content-end div-i"></i>
-              </div>
-              <div class="div-Genres d-flex align-items-center">
-                <span class="font-size-14">Genres</span>
-                <i class="fa fa-angle-down i-Genres"></i>
-              </div>
+    <div class="container-Popup d-none"></div>
+    <section class="container-midd">
+      <header class="position-relative">
+        <section
+          class="section-Container position-absolute"
+          style="z-index: 1; width: 100%"
+        >
+          <div class="header d-grid align-items-center">
+            <a href="index.html">
+              <img
+                src="../icons/icon/logo.png"
+                alt="icon"
+                title="icon"
+                id="icon"
+              />
+            </a>
+            <div class="div-Search align-items-center justify-content-between">
+              <input
+                type="search"
+                class="bg-transparent font-size-14"
+                id="input-Search"
+                placeholder="Search IMDb"
+              />
+              <i class="fa fa-search i-Search" id=""></i>
             </div>
-
-            <div class="div-Modal-Root1"></div>
-          </section>
-          <div class="slider-wrapper position-static">
-            <div class="slider"></div>
-            <div class="dots"></div>
+            <div id="i-720">
+              <i class="fa fa-search justify-content-end div-i"></i>
+            </div>
+            <div class="div-Genres d-flex align-items-center">
+              <span class="font-size-14">Genres</span>
+              <i class="fa fa-angle-down i-Genres"></i>
+            </div>
           </div>
-        </header>
-        <main style="margin-top: 3rem">
-          <section class="section-Container">
-            <div id="movies-container" class="justify-items-center"></div>
-            <div id="pagination" class="pagination"></div>
-          </section>
-        </main>
-        <footer>
-          <p>© 2025 by Karyar Studio</p>
-        </footer>
-      </section>
-    </div>
 
-    <script src="../src/scripts/js/http.js"></script>
-    <script src="../src/scripts/js/loading.js"></script>
-    <script src="../src/scripts/js/popup.js"></script>
-    <script src="../src/scripts/js/header.js"></script>
-    <script src="../src/scripts/js/search.js"></script>
-    <script src="../src/scripts/js/genres.js"></script>
-    <script src="../src/scripts/js/poster.js"></script>
-    <script src="../src/scripts/js/cart-index.js"></script>
+          <div class="div-Modal-Root1"></div>
+        </section>
+        <div class="slider-wrapper position-static">
+          <div class="slider"></div>
+          <div class="dots"></div>
+        </div>
+      </header>
+      <main style="margin-top: 3rem">
+        <section class="section-Container">
+          <div id="movies-container" class="justify-items-center"></div>
+          <div id="pagination" class="pagination"></div>
+        </section>
+      </main>
+      <footer>
+        <p>© 2025 by Karyar Studio</p>
+      </footer>
+    </section>
+
+    <script src="REP/src/scripts/js/http.js"></script>
+    <script src="REP/src/scripts/js/loading.js"></script>
+    <script src="REP/src/scripts/js/popup.js"></script>
+    <script src="REP/src/scripts/js/header.js"></script>
+    <script src="REP/src/scripts/js/search.js"></script>
+    <script src="REP/src/scripts/js/genres.js"></script>
+    <script src="REP/src/scripts/js/poster.js"></script>
+    <script src="REP/src/scripts/js/cart-index.js"></script>
   </body>
 </html>
