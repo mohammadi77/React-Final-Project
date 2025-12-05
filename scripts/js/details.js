@@ -18,8 +18,7 @@ function loadDetails() {
     return;
   }
 
-  // دریافت جزئیات اصلی فیلم/سریال
-  http(`${TMDB_BASE}/${type}/${movieId}?api_key=${TMDB_KEY}&language=en-US`)
+   http(`${TMDB_BASE}/${type}/${movieId}?api_key=${TMDB_KEY}&language=en-US`)
     .then((data) => {
       const title = type === "movie" ? data.title : data.name;
       const date =
@@ -63,14 +62,12 @@ function loadDetails() {
       document.querySelector("tr:nth-of-type(2) td.td-2 p").textContent =
         data.overview || "-";
 
-      // مسیر پوستر از data بگیریم نه credits
-      const posterPath = data.poster_path || data.backdrop_path;
+       const posterPath = data.poster_path || data.backdrop_path;
       document.querySelector(".div-Details-Img img").src = posterPath
         ? TMDB_IMG + posterPath
         : "images/No_Image_Available.jpg";
 
-      // دریافت credits (بازیگران و crew)
-      return http(
+       return http(
         `${TMDB_BASE}/${type}/${movieId}/credits?api_key=${TMDB_KEY}&language=en-US`
       );
     })
@@ -78,8 +75,7 @@ function loadDetails() {
       const crew = Array.isArray(credits.crew) ? credits.crew : [];
       const cast = Array.isArray(credits.cast) ? credits.cast : [];
 
-      // کارگردان یا سازندگان
-      let director = "-";
+       let director = "-";
       if (type === "movie") {
         director = crew.find((c) => c.job === "Director")?.name || "-";
       } else {
@@ -91,8 +87,7 @@ function loadDetails() {
       document.querySelector("tr:nth-of-type(3) td.td-2 p").textContent =
         director;
 
-      // نویسندگان
-      const writersTd = document.querySelector("tr:nth-of-type(4) td.td-2");
+       const writersTd = document.querySelector("tr:nth-of-type(4) td.td-2");
       let writersUl =
         writersTd.querySelector("ul") || document.createElement("ul");
       writersTd.innerHTML = "";
@@ -106,8 +101,7 @@ function loadDetails() {
         ? writers.map((w) => `<li>${w.name}</li>`).join(",")
         : "<li>-</li>";
 
-      // بازیگران
-      const starsTd = document.querySelector("tr:nth-of-type(5) td.td-2");
+       const starsTd = document.querySelector("tr:nth-of-type(5) td.td-2");
       let starsUl = starsTd.querySelector("ul") || document.createElement("ul");
       starsTd.innerHTML = "";
       starsTd.appendChild(starsUl);
@@ -186,8 +180,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// گالری تصاویر
-function loadGallery() {
+ function loadGallery() {
   const galleryContainer = document.querySelector(".div-Details-pic");
 
   function fadeOut() {
@@ -263,7 +256,6 @@ function loadGallery() {
     });
 }
 
-// فراخوانی‌ها
-loadDetails();
+ loadDetails();
 loadGallery();
 loading();
