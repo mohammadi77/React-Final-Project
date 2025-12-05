@@ -1,4 +1,19 @@
 {
+  "name": "react-final-project",
+  "version": "1.0.0",
+  "description": "React-Final-Project",
+  "main": "index.js",
+  "homepage": "https://mohammadi77.github.io/React-Final-Project",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
