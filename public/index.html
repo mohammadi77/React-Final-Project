@@ -27,57 +27,61 @@
     <title>IMDb</title>
   </head>
   <body>
-    <div class="container-Popup d-none"></div>
-    <section class="container-midd">
-      <header class="position-relative">
-        <section
-          class="section-Container position-absolute"
-          style="z-index: 1; width: 100%"
-        >
-          <div class="header d-grid align-items-center">
-            <a href="index.html">
-              <img
-                src="../icons/icon/logo.png"
-                alt="icon"
-                title="icon"
-                id="icon"
-              />
-            </a>
-            <div class="div-Search align-items-center justify-content-between">
-              <input
-                type="search"
-                class="bg-transparent font-size-14"
-                id="input-Search"
-                placeholder="Search IMDb"
-              />
-              <i class="fa fa-search i-Search" id=""></i>
+    <div class="root">
+      <div class="container-Popup d-none"></div>
+      <section class="container-midd">
+        <header class="position-relative">
+          <section
+            class="section-Container position-absolute"
+            style="z-index: 1; width: 100%"
+          >
+            <div class="header d-grid align-items-center">
+              <a href="index.html">
+                <img
+                  src="../icons/icon/logo.png"
+                  alt="icon"
+                  title="icon"
+                  id="icon"
+                />
+              </a>
+              <div
+                class="div-Search align-items-center justify-content-between"
+              >
+                <input
+                  type="search"
+                  class="bg-transparent font-size-14"
+                  id="input-Search"
+                  placeholder="Search IMDb"
+                />
+                <i class="fa fa-search i-Search" id=""></i>
+              </div>
+              <div id="i-720">
+                <i class="fa fa-search justify-content-end div-i"></i>
+              </div>
+              <div class="div-Genres d-flex align-items-center">
+                <span class="font-size-14">Genres</span>
+                <i class="fa fa-angle-down i-Genres"></i>
+              </div>
             </div>
-            <div id="i-720">
-              <i class="fa fa-search justify-content-end div-i"></i>
-            </div>
-            <div class="div-Genres d-flex align-items-center">
-              <span class="font-size-14">Genres</span>
-              <i class="fa fa-angle-down i-Genres"></i>
-            </div>
-          </div>
 
-          <div class="div-Modal-Root1"></div>
-        </section>
-        <div class="slider-wrapper position-static">
-          <div class="slider"></div>
-          <div class="dots"></div>
-        </div>
-      </header>
-      <main style="margin-top: 3rem">
-        <section class="section-Container">
-          <div id="movies-container" class="justify-items-center"></div>
-          <div id="pagination" class="pagination"></div>
-        </section>
-      </main>
-      <footer>
-        <p>© 2025 by Karyar Studio</p>
-      </footer>
-    </section>
+            <div class="div-Modal-Root1"></div>
+          </section>
+          <div class="slider-wrapper position-static">
+            <div class="slider"></div>
+            <div class="dots"></div>
+          </div>
+        </header>
+        <main style="margin-top: 3rem">
+          <section class="section-Container">
+            <div id="movies-container" class="justify-items-center"></div>
+            <div id="pagination" class="pagination"></div>
+          </section>
+        </main>
+        <footer>
+          <p>© 2025 by Karyar Studio</p>
+        </footer>
+      </section>
+    </div>
 
     <script src="scripts/js/http.js"></script>
     <script src="scripts/js/loading.js"></script>
